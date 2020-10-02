@@ -238,3 +238,6 @@ test_pipeline = [
 ]
 data = dict(
     val=dict(pipeline=test_pipeline), test=dict(pipeline=test_pipeline))
+
+load_from = 'https://open-mmlab.s3.ap-northeast-2.amazonaws.com/mmdetection/v2.0/htc/htc_r50_fpn_1x_coco/htc_r50_fpn_1x_coco_20200317-7332cf16.pth'
+

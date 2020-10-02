@@ -25,3 +25,4 @@ model = dict(
             stage_with_sac=(False, True, True, True),
             pretrained='torchvision://resnet50',
             style='pytorch')))
+load_from = 'https://open-mmlab.s3.ap-northeast-2.amazonaws.com/mmdetection/v2.0/detectors/detectors_htc_r50_1x_coco/detectors_htc_r50_1x_coco-329b1453.pth'

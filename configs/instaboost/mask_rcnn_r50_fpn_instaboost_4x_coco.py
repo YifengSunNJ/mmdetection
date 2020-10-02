@@ -22,7 +22,9 @@ train_pipeline = [
     dict(type='DefaultFormatBundle'),
     dict(type='Collect', keys=['img', 'gt_bboxes', 'gt_labels', 'gt_masks']),
 ]
+load_from = 'https://open-mmlab.s3.ap-northeast-2.amazonaws.com/mmdetection/v2.0/instaboost/mask_rcnn_r50_fpn_instaboost_4x_coco/mask_rcnn_r50_fpn_instaboost_4x_coco_20200307-d025f83a.pth'
+
 data = dict(train=dict(pipeline=train_pipeline))
 # learning policy
 lr_config = dict(step=[32, 44])
-total_epochs = 48
+total_epochs = 12
